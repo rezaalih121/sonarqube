@@ -48,6 +48,7 @@ function snakeGame() {
         turn++;
     }
 
+    // option to ask user if he wants to continue the game
     // const rl = readline.createInterface({
     //     input: process.stdin,
     //     output: process.stdout
