@@ -40,6 +40,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_PROJECT_KEY: rezaalih121_sonarqube  # Replace with your SonarCloud project key
-          SONAR_ORGANIZATION: rezaalih121solarcloud  # Replace with your SonarCloud organization d
-          SONAR_HOST_URL: https://sonarcloud.io
+        with:
+          args: >
+            -Dsonar.projectKey=rezaalih121_sonarqube
+            -Dsonar.organization=rezaalih121solarcloud
+            -Dsonar.host.url=https://sonarcloud.io
