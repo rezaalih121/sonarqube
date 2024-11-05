@@ -29,3 +29,4 @@ jobs:
             -Dsonar.projectKey=your_project_key \
             -Dsonar.host.url=http://localhost:9000 \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+            
